@@ -1,8 +1,9 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
-import { Code, Globe, Smartphone, Users, ArrowRight, CheckCircle, Shield } from 'lucide-react';
+import { Code, Globe, Smartphone, Users, ArrowRight, CheckCircle, Shield, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
   const services = [
@@ -188,6 +189,30 @@ const Services = () => {
     }
   ];
 
+  const caseStudies = [
+    {
+      id: 1,
+      title: "E-commerce Platform Transformation",
+      summary: "Increased online sales by 250% through modern web application and improved user experience design.",
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=250&fit=crop",
+      tags: ["Web Development", "E-commerce"]
+    },
+    {
+      id: 2,
+      title: "Healthcare Mobile App",
+      summary: "Streamlined patient management system serving 10,000+ users with real-time appointment booking.",
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=250&fit=crop",
+      tags: ["Mobile App", "Healthcare"]
+    },
+    {
+      id: 3,
+      title: "Enterprise Cloud Migration",
+      summary: "Reduced infrastructure costs by 40% while improving performance and scalability for Fortune 500 client.",
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=250&fit=crop",
+      tags: ["Cloud Solutions", "DevOps"]
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -202,6 +227,66 @@ const Services = () => {
             Comprehensive development solutions designed to transform your business 
             and accelerate your digital growth.
           </p>
+        </div>
+      </section>
+
+      {/* Case Study Previews */}
+      <section className="py-16 bg-muted/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-primary mb-4">
+              Success Stories
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              See how we've helped companies transform their business with our development solutions.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            {caseStudies.map((study) => (
+              <Card key={study.id} className="overflow-hidden hover:shadow-lg transition-shadow">
+                <div className="aspect-video overflow-hidden">
+                  <img 
+                    src={study.image} 
+                    alt={study.title}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    {study.tags.map((tag) => (
+                      <span 
+                        key={tag}
+                        className="bg-accent/10 text-accent text-xs font-medium px-2 py-1 rounded-full"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <h3 className="text-xl font-semibold text-primary mb-3">
+                    {study.title}
+                  </h3>
+                  <p className="text-muted-foreground mb-4">
+                    {study.summary}
+                  </p>
+                  <Link to="/case-studies">
+                    <Button variant="outline" size="sm" className="w-full">
+                      Read More <ExternalLink className="ml-2 h-4 w-4" />
+                    </Button>
+                  </Link>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Link to="/case-studies">
+              <Button size="lg" className="bg-accent hover:bg-accent-light">
+                View All Case Studies
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 
