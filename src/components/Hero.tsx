@@ -56,7 +56,7 @@ const Hero = () => {
                 <Button 
                   variant="outline" 
                   size="lg"
-                  className="border-primary-foreground/20 text-primary-foreground hover:bg-accent hover:text-accent-foreground hover:border-accent font-semibold px-8 transition-all duration-300"
+                  className="border-accent/60 text-accent hover:bg-primary-foreground/10 hover:border-primary-foreground/40 font-semibold px-8 transition-all duration-300"
                 >
                   View Our Work
                 </Button>
