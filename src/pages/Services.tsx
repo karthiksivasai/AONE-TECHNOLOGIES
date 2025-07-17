@@ -1,6 +1,6 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
-import { Code, Globe, Smartphone, Users, ArrowRight, CheckCircle } from 'lucide-react';
+import { Code, Globe, Smartphone, Users, ArrowRight, CheckCircle, Shield } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 
@@ -9,20 +9,19 @@ const Services = () => {
     {
       id: 'software',
       icon: <Code className="h-16 w-16 text-accent" />,
-      title: "Software Development",
-      description: "Enterprise-grade custom software solutions built to scale with your business.",
+      title: "Custom Software Development",
+      description: "Enterprise-grade custom software solutions built to scale with your business needs and drive operational efficiency.",
       features: [
         "Custom Enterprise Applications",
-        "API Development & Integration",
+        "API Development & Integration", 
         "Database Architecture & Design",
         "Cloud-Native Solutions",
-        "Legacy System Modernization",
-        "Microservices Architecture"
+        "Legacy System Modernization"
       ],
       process: [
         "Requirements Analysis",
-        "Architecture Planning", 
-        "Agile Development",
+        "Architecture Planning",
+        "Agile Development", 
         "Quality Assurance",
         "Deployment & Support"
       ]
@@ -31,35 +30,33 @@ const Services = () => {
       id: 'web',
       icon: <Globe className="h-16 w-16 text-accent" />,
       title: "Web Development",
-      description: "Modern, fast, and SEO-optimized websites that drive conversions and engage users.",
+      description: "Modern, fast, and SEO-optimized websites and web applications that drive conversions and engage users effectively.",
       features: [
         "React & Next.js Applications",
         "E-commerce Platforms",
-        "Content Management Systems",
+        "Content Management Systems", 
         "Progressive Web Apps",
-        "Performance Optimization",
-        "SEO & Analytics Integration"
+        "Performance Optimization"
       ],
       process: [
         "UX/UI Design",
         "Frontend Development",
         "Backend Integration",
-        "Testing & Optimization",
+        "Testing & Optimization", 
         "Launch & Maintenance"
       ]
     },
     {
       id: 'app',
       icon: <Smartphone className="h-16 w-16 text-accent" />,
-      title: "App Development",
-      description: "Native and cross-platform mobile applications for iOS and Android platforms.",
+      title: "App Development", 
+      description: "Native and cross-platform mobile applications for iOS and Android platforms with seamless user experiences.",
       features: [
         "React Native Development",
         "iOS & Android Native Apps",
         "Cross-Platform Solutions",
         "App Store Optimization",
-        "Push Notifications",
-        "Analytics & Crash Reporting"
+        "Push Notifications & Analytics"
       ],
       process: [
         "Market Research",
@@ -67,6 +64,126 @@ const Services = () => {
         "Development & Testing",
         "App Store Submission",
         "Post-Launch Support"
+      ]
+    },
+    {
+      id: 'uiux',
+      icon: <Users className="h-16 w-16 text-accent" />,
+      title: "UI/UX Design & Prototyping",
+      description: "User-centered design solutions that create intuitive, engaging experiences and drive customer satisfaction.",
+      features: [
+        "User Experience Research",
+        "Interactive Prototyping",
+        "Design Systems & Style Guides",
+        "Usability Testing",
+        "Responsive Design"
+      ],
+      process: [
+        "User Research",
+        "Wireframe Creation",
+        "Visual Design",
+        "Prototype Testing",
+        "Design Handoff"
+      ]
+    },
+    {
+      id: 'consulting',
+      icon: <Users className="h-16 w-16 text-accent" />,
+      title: "IT Consulting & Strategy",
+      description: "Strategic technology guidance to align your IT infrastructure with business objectives and drive digital transformation.",
+      features: [
+        "Technology Strategy Planning",
+        "Digital Transformation Roadmap",
+        "System Architecture Review",
+        "Vendor Selection & Management",
+        "Risk Assessment & Mitigation"
+      ],
+      process: [
+        "Current State Analysis",
+        "Strategic Planning",
+        "Roadmap Development",
+        "Implementation Support",
+        "Ongoing Advisory"
+      ]
+    },
+    {
+      id: 'cloud',
+      icon: <Globe className="h-16 w-16 text-accent" />,
+      title: "Cloud Infrastructure & Deployment",
+      description: "Scalable, secure cloud solutions that optimize performance, reduce costs, and ensure reliable operations.",
+      features: [
+        "AWS, Azure & Google Cloud",
+        "Container Orchestration",
+        "Auto-Scaling Solutions",
+        "Security & Compliance",
+        "Cost Optimization"
+      ],
+      process: [
+        "Infrastructure Assessment",
+        "Migration Planning",
+        "Cloud Implementation",
+        "Security Configuration",
+        "Performance Monitoring"
+      ]
+    },
+    {
+      id: 'qa',
+      icon: <CheckCircle className="h-16 w-16 text-accent" />,
+      title: "QA & Software Testing",
+      description: "Comprehensive testing services to ensure your software meets the highest quality standards and performs flawlessly.",
+      features: [
+        "Automated Testing Frameworks",
+        "Manual & Exploratory Testing",
+        "Performance & Load Testing",
+        "Security Testing",
+        "Continuous Quality Assurance"
+      ],
+      process: [
+        "Test Planning",
+        "Test Case Development",
+        "Execution & Reporting",
+        "Defect Management",
+        "Quality Metrics"
+      ]
+    },
+    {
+      id: 'devops',
+      icon: <Code className="h-16 w-16 text-accent" />,
+      title: "DevOps Services",
+      description: "Streamlined development and deployment processes that accelerate delivery while maintaining quality and reliability.",
+      features: [
+        "CI/CD Pipeline Setup",
+        "Infrastructure as Code",
+        "Monitoring & Alerting",
+        "Release Management",
+        "Performance Optimization"
+      ],
+      process: [
+        "Current Process Review",
+        "Pipeline Design",
+        "Tool Implementation",
+        "Team Training",
+        "Continuous Improvement"
+      ]
+    },
+    {
+      id: 'support',
+      icon: <Shield className="h-16 w-16 text-accent" />,
+      title: "Maintenance & Support",
+      description: "Ongoing technical support and maintenance services to keep your systems running smoothly and efficiently.",
+      features: [
+        "24/7 System Monitoring",
+        "Bug Fixes & Updates",
+        "Performance Optimization",
+        "Security Patch Management",
+        "Technical Help Desk"
+      ],
+      process: [
+        "Support Plan Setup",
+        "Monitoring Implementation",
+        "Issue Resolution",
+        "Regular Maintenance",
+        "Performance Reports"
       ]
     }
   ];

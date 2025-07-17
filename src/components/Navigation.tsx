@@ -44,9 +44,11 @@ const Navigation = () => {
                 {item.name}
               </Link>
             ))}
-            <Button size="sm" className="bg-accent hover:bg-accent-light">
-              Get Started
-            </Button>
+            <Link to="/contact">
+              <Button size="sm" className="bg-accent hover:bg-accent-light">
+                Get Started
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -81,9 +83,11 @@ const Navigation = () => {
                 </Link>
               ))}
               <div className="px-3 py-2">
-                <Button size="sm" className="w-full bg-accent hover:bg-accent-light">
-                  Get Started
-                </Button>
+                <Link to="/contact">
+                  <Button size="sm" className="w-full bg-accent hover:bg-accent-light">
+                    Get Started
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

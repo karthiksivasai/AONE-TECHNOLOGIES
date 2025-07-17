@@ -1,5 +1,6 @@
 import { ArrowRight, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const benefits = [
@@ -41,22 +42,25 @@ const Hero = () => {
               ))}
             </div>
 
-            {/* CTA Buttons */}
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button 
-                size="lg" 
-                className="bg-accent hover:bg-accent-light text-accent-foreground font-semibold px-8"
-              >
-                Schedule Free Consultation
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 font-semibold px-8"
-              >
-                View Our Work
-              </Button>
+              <Link to="/contact">
+                <Button 
+                  size="lg" 
+                  className="bg-accent hover:bg-accent-light text-accent-foreground font-semibold px-8"
+                >
+                  Schedule Free Consultation
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+              <Link to="/case-studies">
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 font-semibold px-8"
+                >
+                  View Our Work
+                </Button>
+              </Link>
             </div>
           </div>
 
