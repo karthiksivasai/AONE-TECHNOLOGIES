@@ -27,6 +27,10 @@ const Hero = () => {
               <span className="text-accent block mt-2">Expert Development</span>
             </h1>
             
+            <p className="mt-4 text-xl text-accent font-medium">
+              From concept to launch, we deliver exceptional digital experiences that scale.
+            </p>
+            
             <p className="mt-6 text-lg text-primary-foreground/90 max-w-2xl">
               We partner with ambitious companies to build powerful software solutions, 
               stunning web applications, and mobile apps that drive real business results.
@@ -40,6 +44,18 @@ const Hero = () => {
                   <span className="text-primary-foreground/90">{benefit}</span>
                 </div>
               ))}
+            </div>
+
+            {/* Client Testimonial */}
+            <div className="mt-8 p-6 bg-primary-foreground/5 rounded-lg border border-primary-foreground/10">
+              <blockquote className="text-primary-foreground/90 italic">
+                "Their team delivered exactly what we needed, on time and within budget. 
+                The quality of work exceeded our expectations."
+              </blockquote>
+              <footer className="mt-3 text-sm">
+                <cite className="text-accent font-medium">Rajesh Kumar</cite>
+                <span className="text-primary-foreground/70"> - CEO, TechStart Solutions</span>
+              </footer>
             </div>
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
