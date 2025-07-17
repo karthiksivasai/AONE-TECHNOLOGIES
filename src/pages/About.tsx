@@ -179,68 +179,70 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team Overview */}
-      <section className="py-24 bg-muted/30">
+      {/* Team Members */}
+      <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-primary mb-4">Meet Our Team</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Our diverse team of experts brings together years of experience in software development, 
-              design, and business strategy to deliver exceptional results.
+              Our passionate team of experts brings together years of experience to deliver exceptional results.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <Card className="text-center border-border hover:shadow-lg transition-all">
-              <CardHeader>
-                <div className="mx-auto mb-4 p-4 bg-accent/10 rounded-full w-20 h-20 flex items-center justify-center">
-                  <Users className="h-10 w-10 text-accent" />
+              <CardContent className="pt-6">
+                <div className="mx-auto mb-4 w-24 h-24 rounded-full overflow-hidden bg-gradient-to-br from-accent to-accent-light">
+                  <img 
+                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face" 
+                    alt="Arjun Sharma" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                <CardTitle className="text-xl text-primary">Leadership Team</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Experienced executives with proven track records in technology 
-                  leadership and business strategy.
+                <h3 className="text-xl font-semibold text-primary mb-1">Arjun Sharma</h3>
+                <p className="text-accent font-medium mb-3">CEO & Founder</p>
+                <p className="text-sm text-muted-foreground">
+                  Tech visionary with 10+ years building scalable solutions for Fortune 500 companies.
                 </p>
               </CardContent>
             </Card>
 
             <Card className="text-center border-border hover:shadow-lg transition-all">
-              <CardHeader>
-                <div className="mx-auto mb-4 p-4 bg-primary/10 rounded-full w-20 h-20 flex items-center justify-center">
-                  <Shield className="h-10 w-10 text-primary" />
+              <CardContent className="pt-6">
+                <div className="mx-auto mb-4 w-24 h-24 rounded-full overflow-hidden bg-gradient-to-br from-primary to-primary/80">
+                  <img 
+                    src="https://images.unsplash.com/photo-1494790108755-2616b612b77c?w=200&h=200&fit=crop&crop=face" 
+                    alt="Priya Patel" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                <CardTitle className="text-xl text-primary">Development Team</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Senior developers and architects specializing in modern frameworks 
-                  and scalable solutions.
+                <h3 className="text-xl font-semibold text-primary mb-1">Priya Patel</h3>
+                <p className="text-accent font-medium mb-3">CTO & Lead Developer</p>
+                <p className="text-sm text-muted-foreground">
+                  Full-stack expert specializing in React, Node.js, and cloud architecture solutions.
                 </p>
               </CardContent>
             </Card>
 
             <Card className="text-center border-border hover:shadow-lg transition-all">
-              <CardHeader>
-                <div className="mx-auto mb-4 p-4 bg-success/10 rounded-full w-20 h-20 flex items-center justify-center">
-                  <Target className="h-10 w-10 text-success" />
+              <CardContent className="pt-6">
+                <div className="mx-auto mb-4 w-24 h-24 rounded-full overflow-hidden bg-gradient-to-br from-success to-success/80">
+                  <img 
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face" 
+                    alt="Rahul Kumar" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                <CardTitle className="text-xl text-primary">Strategy Team</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Business analysts and consultants focused on aligning technology 
-                  solutions with business objectives.
+                <h3 className="text-xl font-semibold text-primary mb-1">Rahul Kumar</h3>
+                <p className="text-accent font-medium mb-3">Head of Design</p>
+                <p className="text-sm text-muted-foreground">
+                  UX/UI designer creating intuitive experiences that drive user engagement and conversion.
                 </p>
               </CardContent>
             </Card>
           </div>
 
           <div className="text-center">
-            <p className="text-muted-foreground mb-6">
-              <strong>Coming Soon:</strong> Individual team member profiles and expertise areas.
-            </p>
             <Button variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground">
               Join Our Team
               <ArrowRight className="ml-2 h-4 w-4" />
@@ -250,7 +252,7 @@ const About = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-24">
+      <section className="py-24 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-primary mb-4">Why Choose ConsultCorp?</h2>
@@ -323,19 +325,28 @@ const About = () => {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* Enhanced CTA */}
       <section className="bg-gradient-primary py-16">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-primary-foreground mb-4">
-            Ready to Partner With Us?
+            Discuss Your Project →
           </h2>
           <p className="text-lg text-primary-foreground/90 mb-8">
-            Let's discuss how we can help transform your business through technology.
+            Ready to partner with us? Let's discuss how we can help transform your business through technology.
           </p>
-          <Button size="lg" className="bg-accent hover:bg-accent-light text-accent-foreground font-semibold px-8">
-            Schedule a Consultation
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="bg-accent hover:bg-accent-light text-accent-foreground font-semibold px-8">
+              Schedule a Consultation
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+            <Button 
+              variant="outline" 
+              size="lg"
+              className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10"
+            >
+              View Our Work
+            </Button>
+          </div>
         </div>
       </section>
 

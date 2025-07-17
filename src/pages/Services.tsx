@@ -392,18 +392,96 @@ const Services = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* FAQ Section */}
+      <section className="py-16 bg-muted/30">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-primary mb-4">Frequently Asked Questions</h2>
+            <p className="text-lg text-muted-foreground">
+              Get answers to common questions about our development process and services.
+            </p>
+          </div>
+          
+          <div className="space-y-6">
+            <Card className="border-border">
+              <CardHeader>
+                <CardTitle className="text-lg text-primary">What's your typical project timeline?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Project timelines vary based on complexity, but most projects range from 8-16 weeks. 
+                  We provide detailed timelines during our initial consultation and maintain transparency throughout development.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-border">
+              <CardHeader>
+                <CardTitle className="text-lg text-primary">What are your pricing ranges?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  <strong>Projects typically begin at ₹300k+</strong> for basic web applications. 
+                  Complex enterprise solutions range from ₹800k-₹2.5M+. We provide detailed 
+                  quotes after understanding your specific requirements.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-border">
+              <CardHeader>
+                <CardTitle className="text-lg text-primary">Do you provide ongoing support?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Yes! We offer comprehensive maintenance packages including 24/7 monitoring, 
+                  security updates, performance optimization, and feature enhancements to ensure 
+                  your application continues to perform optimally.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-border">
+              <CardHeader>
+                <CardTitle className="text-lg text-primary">What technologies do you specialize in?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  We specialize in modern technologies including React, Node.js, Python, cloud platforms 
+                  (AWS, Azure, GCP), mobile development (React Native, Flutter), and database systems 
+                  (PostgreSQL, MongoDB, Redis).
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-border">
+              <CardHeader>
+                <CardTitle className="text-lg text-primary">How do you ensure project quality?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  We follow industry best practices including automated testing, code reviews, 
+                  continuous integration, security audits, and regular client demos. Our QA process 
+                  ensures 99.9% uptime and optimal performance.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Enhanced CTA Section */}
       <section className="bg-gradient-primary py-16">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-primary-foreground mb-4">
-            Ready to Transform Your Business?
+            Discuss Your Project →
           </h2>
           <p className="text-lg text-primary-foreground/90 mb-8">
-            Let's discuss your project and create a solution that drives real results.
+            Ready to transform your business? Let's discuss your project and create a solution that drives real results.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-accent hover:bg-accent-light text-accent-foreground font-semibold px-8">
-              Schedule Consultation
+              Schedule Free Consultation
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button 
