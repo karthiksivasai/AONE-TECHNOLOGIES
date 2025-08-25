@@ -61,12 +61,6 @@ A responsive and modern website developed for **Aone Technologies** to showcase 
 
 ---
 
-## 📸 Screenshots  
-
-*(Add screenshots of homepage, services, and contact page here)*  
-
----
-
 ## 🌍 Deployment  
 
 The website is live at: [https://aonetechllc.com/](https://aonetechllc.com/)  
