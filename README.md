@@ -1,73 +1,86 @@
-# Welcome to your Lovable project
+# Aone Technologies Website  
 
-## Project info
+A responsive and modern website developed for **Aone Technologies** to showcase their IT and consulting services. The site highlights the company’s expertise, services, and client-focused approach with a clean, professional design.  
 
-**URL**: https://lovable.dev/projects/ff54f2dc-c00a-428e-be54-e9e341dab864
+🌐 **Live Project URL:** [https://aonetechllc.com/](https://aonetechllc.com/)  
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🚀 Features  
 
-**Use Lovable**
+- **Responsive Design** – Works seamlessly across desktop, tablet, and mobile.  
+- **Service Listings** – Clear presentation of IT & consulting services.  
+- **Interactive Contact Forms** – Easy communication for customers.  
+- **Smooth Animations & Transitions** – Enhanced user experience.  
+- **SEO Optimized** – Better online visibility and search ranking.  
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ff54f2dc-c00a-428e-be54-e9e341dab864) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Tech Stack  
 
-**Use your preferred IDE**
+- **Frontend:** HTML5, CSS3, JavaScript  
+- **Frameworks/Libraries:** Bootstrap / Tailwind CSS (if used)  
+- **Backend (if any):** Node.js / PHP (adjust based on what you used)  
+- **Database (if any):** MySQL / MongoDB (if applicable)  
+- **Deployment:** cPanel / Hostinger / Vercel / Netlify (whichever applies)  
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 📂 Project Structure  
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+├── index.html        # Homepage  
+├── about.html        # About page  
+├── services.html     # Services page  
+├── contact.html      # Contact page  
+├── assets/           # Images, icons, etc.  
+├── css/              # Stylesheets  
+├── js/               # Scripts  
+└── README.md         # Project documentation  
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## ⚡ Installation & Setup  
 
-**Use GitHub Codespaces**
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/your-username/aone-technologies-website.git
+   ```  
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+2. Navigate into the project directory:  
+   ```bash
+   cd aone-technologies-website
+   ```  
 
-## What technologies are used for this project?
+3. Open `index.html` in your browser, or use a local server:  
+   ```bash
+   npm install -g live-server
+   live-server
+   ```  
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📸 Screenshots  
 
-## How can I deploy this project?
+*(Add screenshots of homepage, services, and contact page here)*  
 
-Simply open [Lovable](https://lovable.dev/projects/ff54f2dc-c00a-428e-be54-e9e341dab864) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## 🌍 Deployment  
 
-Yes, you can!
+The website is live at: [https://aonetechllc.com/](https://aonetechllc.com/)  
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 🤝 Contributing  
+
+Contributions, issues, and feature requests are welcome!  
+Feel free to fork this repo and submit a pull request.  
+
+---
+
+## 📧 Contact  
+
+For any queries, please reach out:  
+**Aone Technologies** – [https://aonetechllc.com/](https://aonetechllc.com/)  
